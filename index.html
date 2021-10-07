@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no">
+<link rel="stylesheet" href="style.css">
+<title>Christian - Web Developer - v0.4</title>
+<link rel="shortcut icon" href="c.png">
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@500&display=swap');
+  
+</style>
+<body>
+
+   <section class="sec1">
+    <div class="phone-container">
+      <div class="phone-top"></div>
+      <div class="phone-top-line"></div>
+      <div class="phone-sound-ringer"></div>
+      <div class="phone-sound-up"></div>
+      <div class="phone-sound-down"></div>
+      <div class="phone-sound-power"></div>
+      <div class="phone-border"></div>
+      <div class="phone-screen">
+        <div id="phone-header" class="phone-header">
+          <div class="phone-headerr">
+            <p id="hours"></p><p>:</p><p id="minutes"></p>
+          <svg id="battery-white" class="header-battery" width="640" height="512" viewBox="0 0 640 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M544 160V224H576V288H544V352H64V160H544ZM560 96H48C21.49 96 0 117.49 0 144V368C0 394.51 21.49 416 48 416H560C586.51 416 608 394.51 608 368V352H616C629.255 352 640 341.255 640 328V184C640 170.745 629.255 160 616 160H608V144C608 117.49 586.51 96 560 96ZM416 192H96V320H416V192Z" fill="white"/>
+            </svg>
+<svg id="battery-black" class="header-batteryb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="battery-three-quarters" class="svg-inline--fa fa-battery-three-quarters fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#000" d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-144 96H96v128h320V192z"></path></svg>
+            <svg id="location-white" class="header-loaction" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M444.52 3.51999L28.74 195.42C-19.23 217.81 -3.24001 288.17 47.93 288.17H223.84V464.08C223.84 515.25 294.2 531.25 316.59 483.27L508.49 67.49C524.48 29.1 482.9 -12.48 444.52 3.51999Z" fill="white"/>
+            </svg>
+<svg id="location-black" class="header-loactionb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-arrow" class="svg-inline--fa fa-location-arrow fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
+          </div>
+            <div class="phone-headerl">
+              <svg id="signal-white" class="header-signal" width="69" height="71" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M62.1 0C65.918 0 69 2.97313 69 6.65625V64.3438C69 68.0269 65.918 71 62.1 71C58.282 71 55.2 68.0269 55.2 64.3438V6.65625C55.2 2.97313 58.282 0 62.1 0ZM6.9 44.375C10.718 44.375 13.8 47.3481 13.8 51.0312V64.3438C13.8 68.0269 10.718 71 6.9 71C3.082 71 0 68.0269 0 64.3438V51.0312C0 47.3481 3.082 44.375 6.9 44.375ZM34.5 22.1875C38.318 22.1875 41.4 25.1606 41.4 28.8438V64.3438C41.4 68.0269 38.318 71 34.5 71C30.682 71 27.6 68.0269 27.6 64.3438V28.8438C27.6 25.1606 30.682 22.1875 34.5 22.1875Z" fill="white"/>
+                </svg>
+<svg class="header-signalb" id="signal-black"  width="15px" height="16px" viewBox="0 0 15 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <g id="Icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                      <g id="Rounded" transform="translate(-309.000000, -1840.000000)">
+                          <g id="Device" transform="translate(100.000000, 1650.000000)">
+                              <g id="Round-/-Device-/-signal_cellular_alt" transform="translate(204.000000, 186.000000)">
+                                  <g>
+                              <polygon id="Path" points="0 0 24 0 24 24 0 24"></polygon>
+                            <path d="M18.5,4 C19.33,4 20,4.67 20,5.5 L20,18.5 C20,19.33 19.33,20 18.5,20 C17.67,20 17,19.33 17,18.5 L17,5.5 C17,4.67 17.67,4 18.5,4 Z M6.5,14 C7.33,14 8,14.67 8,15.5 L8,18.5 C8,19.33 7.33,20 6.5,20 C5.67,20 5,19.33 5,18.5 L5,15.5 C5,14.67 5.67,14 6.5,14 Z M12.5,9 C13.33,9 14,9.67 14,10.5 L14,18.5 C14,19.33 13.33,20 12.5,20 C11.67,20 11,19.33 11,18.5 L11,10.5 C11,9.67 11.67,9 12.5,9 Z" id="🔹-Icon-Color" fill="#1D1D1D"></path>
+                      </g>
+                 </g>
+           </g>
+     </g>
+</g>
+              </svg>
+                <p>Service</p>
+                <svg id="wifi-white"  class="header-wifi" width="640" height="512" viewBox="0 0 640 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M634.91 154.88C457.74 -8.99 182.19 -8.93 5.09 154.88C-1.57 161.04 -1.7 171.47 4.74 177.86L38.98 211.83C45.12 217.93 55 218.06 61.38 212.21C207.3 78.53 432.68 78.5 578.63 212.21C585.01 218.06 594.89 217.92 601.03 211.83L635.27 177.86C641.7 171.47 641.57 161.04 634.91 154.88ZM320 352C284.65 352 256 380.65 256 416C256 451.35 284.65 480 320 480C355.35 480 384 451.35 384 416C384 380.65 355.35 352 320 352ZM522.67 268.41C407.41 166.48 232.46 166.59 117.33 268.41C110.43 274.51 110.21 285.1 116.76 291.56L151.2 325.55C157.2 331.47 166.86 331.87 173.25 326.35C257.2 253.78 382.99 253.94 466.74 326.35C473.13 331.87 482.79 331.48 488.79 325.55L523.23 291.56C529.79 285.1 529.56 274.5 522.67 268.41V268.41Z" fill="white"/>
+                </svg>
+<svg id="wifi-black" class="header-wifib" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="wifi" class="svg-inline--fa fa-wifi fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="currentColor" d="M634.91 154.88C457.74-8.99 182.19-8.93 5.09 154.88c-6.66 6.16-6.79 16.59-.35 22.98l34.24 33.97c6.14 6.1 16.02 6.23 22.4.38 145.92-133.68 371.3-133.71 517.25 0 6.38 5.85 16.26 5.71 22.4-.38l34.24-33.97c6.43-6.39 6.3-16.82-.36-22.98zM320 352c-35.35 0-64 28.65-64 64s28.65 64 64 64 64-28.65 64-64-28.65-64-64-64zm202.67-83.59c-115.26-101.93-290.21-101.82-405.34 0-6.9 6.1-7.12 16.69-.57 23.15l34.44 33.99c6 5.92 15.66 6.32 22.05.8 83.95-72.57 209.74-72.41 293.49 0 6.39 5.52 16.05 5.13 22.05-.8l34.44-33.99c6.56-6.46 6.33-17.06-.56-23.15z"></path></svg>
+            </div>
+        </div>
+
+
+        <div onclick="settingson()" class="settings-p">
+          <svg class="settings-svg" width="417" height="436" viewBox="0 0 417 436" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M208.5 272.5C237.288 272.5 260.625 248.1 260.625 218C260.625 187.9 237.288 163.5 208.5 163.5C179.712 163.5 156.375 187.9 156.375 218C156.375 248.1 179.712 272.5 208.5 272.5Z" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+            <path class="settings-svgm" d="M337.075 272.5C334.762 277.979 334.072 284.058 335.094 289.951C336.116 295.844 338.803 301.282 342.809 305.563L343.851 306.653C347.082 310.028 349.645 314.035 351.394 318.446C353.143 322.856 354.043 327.584 354.043 332.359C354.043 337.134 353.143 341.862 351.394 346.273C349.645 350.683 347.082 354.691 343.851 358.065C340.624 361.443 336.791 364.123 332.573 365.951C328.354 367.78 323.832 368.721 319.266 368.721C314.699 368.721 310.177 367.78 305.958 365.951C301.74 364.123 297.907 361.443 294.68 358.065L293.637 356.975C289.543 352.787 284.342 349.977 278.705 348.909C273.069 347.84 267.256 348.562 262.015 350.98C256.876 353.283 252.493 357.107 249.406 361.981C246.319 366.854 244.662 372.566 244.64 378.412V381.5C244.64 391.136 240.979 400.378 234.462 407.192C227.945 414.005 219.106 417.833 209.89 417.833C200.674 417.833 191.835 414.005 185.318 407.192C178.801 400.378 175.14 391.136 175.14 381.5V379.865C175.005 373.852 173.144 368.02 169.797 363.128C166.451 358.236 161.774 354.509 156.375 352.433C151.134 350.015 145.321 349.294 139.685 350.362C134.048 351.431 128.847 354.24 124.752 358.428L123.71 359.518C120.483 362.896 116.65 365.576 112.432 367.405C108.213 369.233 103.691 370.174 99.1244 370.174C94.5577 370.174 90.0358 369.233 85.8172 367.405C81.5986 365.576 77.7661 362.896 74.5387 359.518C71.3078 356.144 68.7447 352.137 66.9959 347.726C65.2472 343.315 64.347 338.587 64.347 333.812C64.347 329.038 65.2472 324.31 66.9959 319.899C68.7447 315.488 71.3078 311.481 74.5387 308.107L75.5812 307.017C79.5868 302.735 82.2738 297.297 83.2958 291.404C84.3178 285.511 83.6279 279.433 81.315 273.953C79.1125 268.58 75.4554 263.998 70.7938 260.77C66.1323 257.542 60.6698 255.81 55.0788 255.787H52.125C42.9087 255.787 34.0699 251.959 27.553 245.145C21.0362 238.331 17.375 229.09 17.375 219.453C17.375 209.817 21.0362 200.576 27.553 193.762C34.0699 186.948 42.9087 183.12 52.125 183.12H53.6887C59.4398 182.979 65.0173 181.033 69.6963 177.534C74.3753 174.035 77.9393 169.145 79.925 163.5C82.2379 158.021 82.9278 151.942 81.9058 146.049C80.8839 140.156 78.1968 134.718 74.1912 130.437L73.1488 129.347C69.9178 125.972 67.3547 121.965 65.6059 117.554C63.8572 113.144 62.957 108.416 62.957 103.641C62.957 98.8661 63.8572 94.1381 65.6059 89.7273C67.3547 85.3165 69.9178 81.3094 73.1488 77.935C76.3761 74.5569 80.2086 71.8769 84.4272 70.0485C88.6458 68.22 93.1677 67.2789 97.7344 67.2789C102.301 67.2789 106.823 68.22 111.042 70.0485C115.26 71.8769 119.093 74.5569 122.32 77.935L123.362 79.025C127.457 83.2131 132.658 86.0225 138.295 87.0911C143.931 88.1596 149.744 87.4383 154.985 85.02H156.375C161.514 82.7171 165.897 78.8934 168.984 74.0195C172.071 69.1455 173.728 63.4341 173.75 57.5883V54.5C173.75 44.8638 177.411 35.6223 183.928 28.8085C190.445 21.9946 199.284 18.1667 208.5 18.1667C217.716 18.1667 226.555 21.9946 233.072 28.8085C239.589 35.6223 243.25 44.8638 243.25 54.5V56.135C243.272 61.9808 244.929 67.6922 248.016 72.5661C251.103 77.4401 255.486 81.2638 260.625 83.5667C265.866 85.9849 271.679 86.7063 277.315 85.6377C282.952 84.5692 288.153 81.7598 292.247 77.5717L293.29 76.4817C296.517 73.1035 300.35 70.4236 304.568 68.5952C308.787 66.7667 313.309 65.8256 317.876 65.8256C322.442 65.8256 326.964 66.7667 331.183 68.5952C335.401 70.4236 339.234 73.1035 342.461 76.4817C345.692 79.8561 348.255 83.8632 350.004 88.274C351.753 92.6848 352.653 97.4127 352.653 102.187C352.653 106.962 351.753 111.69 350.004 116.101C348.255 120.512 345.692 124.519 342.461 127.893L341.419 128.983C337.413 133.265 334.726 138.703 333.704 144.596C332.682 150.489 333.372 156.567 335.685 162.047V163.5C337.887 168.873 341.545 173.456 346.206 176.683C350.868 179.911 356.33 181.643 361.921 181.667H364.875C374.091 181.667 382.93 185.495 389.447 192.308C395.964 199.122 399.625 208.364 399.625 218C399.625 227.636 395.964 236.878 389.447 243.692C382.93 250.505 374.091 254.333 364.875 254.333H363.311C357.72 254.357 352.258 256.089 347.596 259.317C342.935 262.544 339.277 267.127 337.075 272.5V272.5Z" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            </svg>
+            <p>Settings</p>
+            </div>
+            <div class="settings-page" id="settings-page">
+              <div class="phone-x" onclick="settingsoff()">
+                <p>&#10006;</p>
+              </div>
+              <div class="settingspage-p">
+                <h1>Settings</h1>
+                <fieldset>
+                <legend><h2>Wallpapers</h2></legend>
+                <div class="s-background">
+                  <div class="sbimg"><img src="phone_backgrounds/default.jpg"></div><p>Default</p>
+                </div>
+                <div class="s-background">
+                  <div class="sbimg"><img src="phone_backgrounds/space.jpg"></div><p>Space</p>
+                </div>
+                <div class="s-background">
+                  <div class="sbimg"><img src="phone_backgrounds/mountain.jpeg"></div><p>Mountains</p>
+                </div>
+                <div class="s-background">
+                  <div class="sbimg"><img src="phone_backgrounds/ocean.jpg"></div><p>Ocean</p>
+                </div>
+              </fieldset>
+              </div>
+            </div>
+
+
+        <div class="weather-p">
+          <svg class="weather-svg" width="418" height="457" viewBox="0 0 418 457" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0)">
+            <path d="M365.75 321.328C393.116 321.328 411.469 301.263 411.469 271.344C411.469 241.432 393.116 207.078 365.75 207.078C365.75 132.28 303.54 78.5469 235.125 78.5469C174.574 78.5469 121.821 122.897 111.031 185.656C111.031 185.656 102.985 185.656 97.9688 185.656C63.7581 185.656 39.1875 219.66 39.1875 257.062C39.1875 294.465 63.7581 321.328 97.9688 321.328" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M195.931 83.9166C181.523 71.6062 163.392 64.2656 143.688 64.2656C96.7931 64.2656 58.7812 105.824 58.7812 157.094C58.7812 175.495 63.3988 185.506 71.8438 199.938" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M39.1875 157.094H0" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M143.688 42.8438V0" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M65.3125 71.4062L26.125 28.5625" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M176.344 414.156C176.344 433.872 190.961 449.859 209 449.859C227.039 449.859 241.656 433.872 241.656 414.156C241.656 394.441 227.039 378.453 209 378.453H13.0625" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            <path d="M261.25 314.188C261.25 294.472 275.867 278.484 293.906 278.484C311.946 278.484 326.562 294.472 326.562 314.188C326.562 333.903 311.946 349.891 293.906 349.891H26.125" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
+            </g>
+            <defs>
+            <clipPath id="clip0">
+            <rect width="418" height="457" fill="white"/>
+            </clipPath>
+            </defs>
+            </svg> 
+            <p>Weather</p> 
+        </div>
+
+
+
+        </div>
+      </div>
+
+   </section>
+    
+    
+
+<script>
+  window.onload = function phonetimeheader() {
+var hours = document.getElementById("hours");
+    var minutes = document.getElementById("minutes");
+    var h = new Date().getHours();
+    var m = new Date().getMinutes();
+    h = h < 10 ? "0" + h : h;
+    m = m < 10 ? "0" + m : m;
+    hours.innerHTML = h;
+    minutes.innerHTML = m;
+    setTimeout(function wb() {
+      return phonetimeheader();
+  },1000);
+  }
+
+  function settingson() {
+    var settingspage = document.getElementById("settings-page");
+    settingspage.style.display = "block";
+    var headerblack = document.getElementById("phone-header");
+    headerblack.classList.toggle("phone-headerb");
+    headerblack.classList.toggle("phone-header");
+    document.getElementById("battery-white").style.visibility = "hidden";
+    document.getElementById("battery-black").style.visibility = "visible";
+    document.getElementById("location-white").style.visibility = "hidden";
+    document.getElementById("location-black").style.visibility = "visible";
+    document.getElementById("wifi-white").style.visibility = "hidden";
+    document.getElementById("wifi-black").style.visibility = "visible";
+    document.getElementById("signal-white").style.visibility = "hidden";
+    document.getElementById("signal-black").style.visibility = "visible";
+  }
+  function settingsoff() {
+    var settingspage = document.getElementById("settings-page");
+    settingspage.style.animation = "settingspageloadoff 0.8s forwards";
+    var headerblack = document.getElementById("phone-header");
+    headerblack.classList.toggle("phone-headerb");
+    headerblack.classList.toggle("phone-header");
+    document.getElementById("battery-white").style.visibility = "visible";
+    document.getElementById("battery-black").style.visibility = "hidden";
+    document.getElementById("location-white").style.visibility = "visible";
+    document.getElementById("location-black").style.visibility = "hidden";
+    document.getElementById("wifi-white").style.visibility = "visible";
+    document.getElementById("wifi-black").style.visibility = "hidden";
+    document.getElementById("signal-white").style.visibility = "visible";
+    document.getElementById("signal-black").style.visibility = "hidden";
+    setTimeout(function settingsoffs() {
+    settingspage.style.animation = "settingspageloadon 0.8s";
+    settingspage.style.display = "none"
+  },800);
+}
+</script>
+</body>
+</html>
