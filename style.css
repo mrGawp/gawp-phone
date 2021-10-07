@@ -70,7 +70,7 @@ body{
   width: 215px;
   height: 452px;
   border-radius: 8px;
-  background: url('phone_backgrounds/default.jpg'); /*background image*/
+  background-image: url('phone_backgrounds/default.jpg'); /*background image*/
   background-size: cover;/*background image*/
   background-position: center; /*background image*/
   z-index: 3;

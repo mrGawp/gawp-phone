@@ -23,7 +23,7 @@
       <div class="phone-sound-down"></div>
       <div class="phone-sound-power"></div>
       <div class="phone-border"></div>
-      <div class="phone-screen">
+      <div class="phone-screen" id="phone-screen">
         <div id="phone-header" class="phone-header">
           <div class="phone-headerr">
             <p id="hours"></p><p>:</p><p id="minutes"></p>
@@ -78,16 +78,16 @@
                 <h1>Settings</h1>
                 <fieldset>
                 <legend><h2>Wallpapers</h2></legend>
-                <div class="s-background">
+                <div class="s-background" onclick="settingsbdefault()">
                   <div class="sbimg"><img src="phone_backgrounds/default.jpg"></div><p>Default</p>
                 </div>
-                <div class="s-background">
+                <div class="s-background" onclick="settingsbspace()">
                   <div class="sbimg"><img src="phone_backgrounds/space.jpg"></div><p>Space</p>
                 </div>
-                <div class="s-background">
+                <div class="s-background" onclick="settingsbmountains()">
                   <div class="sbimg"><img src="phone_backgrounds/mountain.jpeg"></div><p>Mountains</p>
                 </div>
-                <div class="s-background">
+                <div class="s-background" onclick="settingsbocean()">
                   <div class="sbimg"><img src="phone_backgrounds/ocean.jpg"></div><p>Ocean</p>
                 </div>
               </fieldset>
@@ -172,6 +172,22 @@ var hours = document.getElementById("hours");
     settingspage.style.animation = "settingspageloadon 0.8s";
     settingspage.style.display = "none"
   },800);
+}
+function settingsbdefault() {
+  var settingsdefault = document.getElementById("phone-screen");
+  settingsdefault.style.backgroundImage = "url('phone_backgrounds/default.jpg')";
+}
+function settingsbspace() {
+  var settingsspace = document.getElementById("phone-screen");
+  settingsspace.style.backgroundImage = "url('phone_backgrounds/space.jpg')";
+}
+function settingsbmountains() {
+  var settingsmountains = document.getElementById("phone-screen");
+  settingsmountains.style.backgroundImage = "url('phone_backgrounds/mountain.jpeg')";
+}
+function settingsbocean() {
+  var settingsocean = document.getElementById("phone-screen");
+  settingsocean.style.backgroundImage = "url('phone_backgrounds/ocean.jpg')";
 }
 </script>
 </body>
