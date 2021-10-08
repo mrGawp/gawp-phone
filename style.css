@@ -79,7 +79,7 @@ body{
 }
 .phone-screen iframe { /*iframe*/
   position: absolute; /*iframe*/
-  width: 215px;       /*iframe*/
+  width: 216px;       /*iframe*/
   height: 452px;      /*iframe*/
   border-radius: 8px; 
   margin-top: -80px; 
@@ -462,7 +462,7 @@ legend {
 .weather-page {
   position: absolute;
   display: none;
-  width: 215px;
+  width: 217px;
   height: 452px;
   border-radius: 8px;
   z-index: 3;
