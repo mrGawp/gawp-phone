@@ -26,16 +26,16 @@
       <div class="phone-screen" id="phone-screen">
         <div id="phone-header" class="phone-header">
           <div class="phone-headerr">
-            <p id="hours"></p><p>:</p><p id="minutes"></p>
+            <svg id="location-white" class="header-loaction" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M444.52 3.51999L28.74 195.42C-19.23 217.81 -3.24001 288.17 47.93 288.17H223.84V464.08C223.84 515.25 294.2 531.25 316.59 483.27L508.49 67.49C524.48 29.1 482.9 -12.48 444.52 3.51999Z" fill="white"/>
+              </svg>
+  <svg id="location-black" class="header-loactionb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-arrow" class="svg-inline--fa fa-location-arrow fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
           <svg id="battery-white" class="header-battery" width="640" height="512" viewBox="0 0 640 512" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M544 160V224H576V288H544V352H64V160H544ZM560 96H48C21.49 96 0 117.49 0 144V368C0 394.51 21.49 416 48 416H560C586.51 416 608 394.51 608 368V352H616C629.255 352 640 341.255 640 328V184C640 170.745 629.255 160 616 160H608V144C608 117.49 586.51 96 560 96ZM416 192H96V320H416V192Z" fill="white"/>
             </svg>
 <svg id="battery-black" class="header-batteryb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="battery-three-quarters" class="svg-inline--fa fa-battery-three-quarters fa-w-20" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path fill="#000" d="M544 160v64h32v64h-32v64H64V160h480m16-64H48c-26.51 0-48 21.49-48 48v224c0 26.51 21.49 48 48 48h512c26.51 0 48-21.49 48-48v-16h8c13.255 0 24-10.745 24-24V184c0-13.255-10.745-24-24-24h-8v-16c0-26.51-21.49-48-48-48zm-144 96H96v128h320V192z"></path></svg>
-            <svg id="location-white" class="header-loaction" width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M444.52 3.51999L28.74 195.42C-19.23 217.81 -3.24001 288.17 47.93 288.17H223.84V464.08C223.84 515.25 294.2 531.25 316.59 483.27L508.49 67.49C524.48 29.1 482.9 -12.48 444.52 3.51999Z" fill="white"/>
-            </svg>
-<svg id="location-black" class="header-loactionb" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="location-arrow" class="svg-inline--fa fa-location-arrow fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M444.52 3.52L28.74 195.42c-47.97 22.39-31.98 92.75 19.19 92.75h175.91v175.91c0 51.17 70.36 67.17 92.75 19.19l191.9-415.78c15.99-38.39-25.59-79.97-63.97-63.97z"></path></svg>
-          </div>
+            <p id="hours"></p><p>:</p><p id="minutes"></p>  
+              </div>
             <div class="phone-headerl">
               <svg id="signal-white" class="header-signal" width="69" height="71" viewBox="0 0 69 71" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M62.1 0C65.918 0 69 2.97313 69 6.65625V64.3438C69 68.0269 65.918 71 62.1 71C58.282 71 55.2 68.0269 55.2 64.3438V6.65625C55.2 2.97313 58.282 0 62.1 0ZM6.9 44.375C10.718 44.375 13.8 47.3481 13.8 51.0312V64.3438C13.8 68.0269 10.718 71 6.9 71C3.082 71 0 68.0269 0 64.3438V51.0312C0 47.3481 3.082 44.375 6.9 44.375ZM34.5 22.1875C38.318 22.1875 41.4 25.1606 41.4 28.8438V64.3438C41.4 68.0269 38.318 71 34.5 71C30.682 71 27.6 68.0269 27.6 64.3438V28.8438C27.6 25.1606 30.682 22.1875 34.5 22.1875Z" fill="white"/>
@@ -95,7 +95,7 @@
             </div>
 
 
-        <div class="weather-p">
+        <div class="weather-p" onclick="weatheron()" >
           <svg class="weather-svg" width="418" height="457" viewBox="0 0 418 457" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M365.75 321.328C393.116 321.328 411.469 301.263 411.469 271.344C411.469 241.432 393.116 207.078 365.75 207.078C365.75 132.28 303.54 78.5469 235.125 78.5469C174.574 78.5469 121.821 122.897 111.031 185.656C111.031 185.656 102.985 185.656 97.9688 185.656C63.7581 185.656 39.1875 219.66 39.1875 257.062C39.1875 294.465 63.7581 321.328 97.9688 321.328" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
             <path d="M195.931 83.9166C181.523 71.6062 163.392 64.2656 143.688 64.2656C96.7931 64.2656 58.7812 105.824 58.7812 157.094C58.7812 175.495 63.3988 185.506 71.8438 199.938" stroke="white" stroke-width="18" stroke-miterlimit="10"/>
@@ -107,7 +107,11 @@
             </svg> 
             <p>Weather</p> 
         </div>
-
+        <div id="weather-page" class="weather-page"><iframe src="weather/index.html"></iframe>
+          <div class="phone-x" onclick="weatheroff()" style="margin-top: -80px;">
+            <p>&#10006;</p>
+            </div>
+          </div>
 
         <div onclick="flappyon()" class="flappy-p">
           <img class="flappy-img" src="flappy.png">
@@ -120,6 +124,7 @@
           </div>
 
           <div class="clock-p">
+            <svg class="clock-svg" focusable="false" data-prefix="far" data-icon="clock" class="svg-inline--fa fa-clock fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#fff" d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>
             <p>Clock</p> 
         </div>  
 
@@ -228,6 +233,18 @@ function flappyoff() {
     setTimeout(function settingsoffs() {
       flappypage.style.animation = "pageloadon 0.8s";
       flappypage.style.display = "none"
+  },800);
+}
+function weatheron() {
+  var weatherpage = document.getElementById("weather-page");
+  weatherpage.style.display = "block";
+}
+function weatheroff() {
+  var weatherpage = document.getElementById("weather-page");
+  weatherpage.style.animation = "pageloadoff 0.8s forwards";
+    setTimeout(function weatheroffs() {
+      weatherpage.style.animation = "pageloadon 0.8s";
+      weatherpage.style.display = "none"
   },800);
 }
 </script>

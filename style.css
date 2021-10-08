@@ -162,10 +162,13 @@ body{
   z-index:6;
 }
 .phone-headerl {
-  position: absolute;
-  text-align: center;
-  top: -6px;
-  left:2px;
+  display: inline;
+  position: relative;
+  text-align: left;
+  float: left;
+  margin-top:-5px;
+  margin-left:2px;
+  width:auto;
 }
 .phone-headerl p {
   position: relative;
@@ -175,10 +178,12 @@ body{
   margin-right: 0.5px;
 }
 .phone-headerr {
-  position: absolute;
-  text-align: center;
-  top: -7px;
-  right:4px;
+  display: inline;
+  position: relative;
+  text-align: left;
+  float: right;
+  margin-top:-5px;
+  margin-right:4px;
   width:auto;
 }
 .phone-headerr p {
@@ -190,18 +195,15 @@ body{
 }
 /*white icons*/
 .header-battery {
-  position: absolute;
+  position: relative;
   width:13px;
   height:auto;
-  margin-top:9.5px;
-  margin-left:-170%;
+  margin-bottom:-1px;
 }
 .header-loaction {
-  position: absolute;
+  position: relative;
   width:7px;
   height:auto;
-  margin-top:11px;
-  margin-left:-214%;
 }
 .header-signal {
   position: absolute;
@@ -211,11 +213,10 @@ body{
   margin-left:2px;
 }
 .header-wifi {
-  position: absolute;
+  position: relative;
   width:9.5px;
   height:auto;
-  margin-top:10px;
-  margin-left:2px;
+  margin-left:-2px;
 }
 /*black icons*/
 .header-batteryb {
@@ -223,8 +224,8 @@ body{
   position: absolute;
   width:13px;
   height:auto;
-  margin-top:9.5px;
-  margin-left:-170%;
+  margin-top:8.9px;
+  margin-left:-31%;
   opacity: 0.5;
 }
 .header-loactionb {
@@ -232,8 +233,8 @@ body{
   position: absolute;
   width:7px;
   height:auto;
-  margin-top:11px;
-  margin-left:-214%;
+  margin-top:10px;
+  margin-left:-18%;
   opacity: 0.5;
 }
 .header-signalb {
@@ -250,8 +251,8 @@ body{
   position: absolute;
   width:9.5px;
   height:auto;
-  margin-top:10px;
-  margin-left:2px;
+  margin-top:10.5px;
+  margin-left:-11px;
   opacity: 0.5;
 }
 .phone-x {
@@ -457,6 +458,16 @@ legend {
   width:26px;
   height:auto;
 }
+.weather-page {
+  position: absolute;
+  display: none;
+  width: 215px;
+  height: 452px;
+  border-radius: 8px;
+  z-index: 3;
+  opacity:1;
+  animation: pageloadon 0.8s;
+}
 
 /*flappybird-----------------------------------------------------------------------------------------------*/
 .flappy-p {
@@ -538,6 +549,12 @@ legend {
   transform: scale(1.1);
   -webkit-transform: scale(1.1);
   background: rgba(0, 0, 0, 0.918);
+}
+.clock-svg {
+  position: relative;
+  object-fit: contain;
+  width:22px;
+  height:auto;
 }
 
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
