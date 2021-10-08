@@ -13,19 +13,18 @@
           <div id="currentScore"></div>
         </div>
       </header>
-    
       <canvas id="canvas" width="431" height="768"></canvas>
 
       <script>
 const canvas = document.getElementById('canvas');
 const ctx = canvas.getContext('2d');
 const img = new Image();
-img.src = "https://i.ibb.co/Q9yv5Jk/flappy-bird-set.png";
+img.src = "flappy.png";
 
 // general settings
 let gamePlaying = false;
 const gravity = .5;
-const speed = 6.2;
+const speed = 5.2;
 const size = [51, 36];
 const jump = -9.5;
 const cTenth = (canvas.width / 10);
@@ -39,7 +38,7 @@ let index = 0,
 
 // pipe settings
 const pipeWidth = 78;
-const pipeGap = 400;
+const pipeGap = 350;
 const pipeLoc = () => (Math.random() * ((canvas.height - (pipeGap + pipeWidth)) - pipeWidth)) + pipeWidth;
 
 const setup = () => {
@@ -106,8 +105,8 @@ const render = () => {
     ctx.drawImage(img, 432, Math.floor((index % 9) / 3) * size[1], ...size, ((canvas.width / 2) - size[0] / 2), flyHeight, ...size);
     flyHeight = (canvas.height / 2) - (size[1] / 2);
       // text accueil
-    ctx.fillText(`Best score : ${bestScore}`, 120, 245);
-    ctx.fillText('Click to play', 122, 535);
+      ctx.drawImage(img, -1038, -1200, 1400, 1400);
+    ctx.fillText('Click to play', 125, 535);
     ctx.font = "300 30px poppins";
   }
 
