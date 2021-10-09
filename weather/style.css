@@ -28,7 +28,9 @@ body {
 }
 
 button {
-  margin-left: 1.5em;
+  display: grid;
+  place-items: center;
+  margin: 4px;
   border-radius: 50%;
   border: none;
   height: 36px;
@@ -41,6 +43,7 @@ button {
 }
 
 input.search-bar {
+  margin-left: -9px;
   border: none;
   outline: none;
   padding: 0.4em 1em;
@@ -49,12 +52,11 @@ input.search-bar {
   color: white;
   font-family: inherit;
   font-size: 80%;
-  width: calc(100% - 70px);
-  margin-left:-10px;
+  width: calc(100% - 75px);
 }
 
 button:hover {
-  background: #7c7c7c6b;
+  background: #6c71886b;
 }
 
 h1.temp {
@@ -64,25 +66,57 @@ h1.temp {
 
 .flex {
   position: relative;
-  display: inline-flex;
-  align-items: center;
-  margin-left: -10px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
 }
 .city {
   font-size:18px;
 }
-
+.searchicon {
+ opacity: 0.35;
+ transform: scale(0.8);
+}
 .description {
   text-transform: capitalize;
   margin-top:4px;
+  margin-bottom:9px;
 }
-
 .weather.loading {
   visibility: hidden;
   max-height: 20px;
   position: relative;
 }
-
+.humidity {
+  font-size:12px;
+}
+.wind {
+  font-size:10px;
+}
+.high {font-size:12px; margin-right:5px;}
+.low {font-size:12px;}
+.flexhl {
+  display: inline-flex;
+  width:90%;
+  margin-bottom: 12px;
+}
+.cityicon {
+  width:20px;
+  height:auto;
+  margin-left:5%;
+}
+.flexcity {
+  display: inline-flex;
+  width:90%;
+}
+.icon {
+  width:50px;
+  height:auto;
+  margin-left: -5%;
+}
+.feelslike {
+  font-size:12px;
+}
 .weather.loading:after {
   visibility: visible;
   content: "Loading...";

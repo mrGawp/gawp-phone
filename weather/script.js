@@ -18,14 +18,20 @@ let weather = {
   },
   displayWeather: function (data) {
     const { name } = data;
+    const { feels_like } = data.main;
     const { icon, description } = data.weather[0];
+    const { temp_max } = data.main;
+    const { temp_min } = data.main;
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    document.querySelector(".city").innerText = "Weather in " + name;
+    document.querySelector(".city").innerText = name;
+    document.querySelector(".feelslike").innerText = "Feels Like: " + feels_like + "°c";
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
     document.querySelector(".description").innerText = description;
-    document.querySelector(".temp").innerText = temp + "°C";
+    document.querySelector(".temp").innerText = temp + "°c";
+    document.querySelector(".high").innerText = "H : " + temp_max + "°c";
+    document.querySelector(".low").innerText = "L : " + temp_min + "°c";
     document.querySelector(".humidity").innerText =
       "Humidity: " + humidity + "%";
     document.querySelector(".wind").innerText =
