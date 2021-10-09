@@ -110,6 +110,7 @@ h1.temp {
 .flexcity {
   display: inline-flex;
   width:90%;
+  height:auto;
 }
 .icon {
   width:50px;
