@@ -44,7 +44,6 @@ button {
 }
 
 input.search-bar {
-  margin-left: -9px;
   border: none;
   outline: none;
   padding: 0.4em 1em;
