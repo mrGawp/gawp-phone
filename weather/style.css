@@ -10,9 +10,7 @@ body {
 }
 
 .card {
-  margin-top:5%;
-  margin-left:auto;
-  margin-right: auto;
+  margin-top:3%;
   background: #202020d0;
   color: white;
   padding: 25px;
@@ -44,6 +42,7 @@ button {
 }
 
 input.search-bar {
+  margin-left: -9px;
   border: none;
   outline: none;
   padding: 0.4em 1em;
@@ -69,6 +68,7 @@ h1.temp {
   display: flex;
   flex-direction: column;
   align-items: left;
+  background: transparent;
 }
 .city {
   font-size:18px;
@@ -78,6 +78,7 @@ h1.temp {
  transform: scale(0.8);
 }
 .description {
+  background: transparent;
   text-transform: capitalize;
   margin-top:4px;
   margin-bottom:9px;
@@ -99,6 +100,7 @@ h1.temp {
   display: inline-flex;
   width:90%;
   margin-bottom: 12px;
+  background: transparent;
 }
 .cityicon {
   width:20px;
@@ -110,6 +112,7 @@ h1.temp {
   display: inline-flex;
   width:90%;
   height:auto;
+  background: transparent;
 }
 .icon {
   width:50px;
