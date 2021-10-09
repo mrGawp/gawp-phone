@@ -103,8 +103,9 @@ h1.temp {
 }
 .cityicon {
   width:20px;
-  height:auto;
+  height:40px;
   margin-left:5%;
+  margin-top:8.9px;
 }
 .flexcity {
   display: inline-flex;
