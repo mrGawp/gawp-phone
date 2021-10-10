@@ -7,16 +7,14 @@
 <title>--</title>
 <style>
 
-* {
-    margin:0;
-    padding: 0;
-    box-sizing: border-box;
-}
 body {
-   display: grid;
-   place-content: center;
-   min-height: 100vh;
    background: #091921;
+}
+section {
+    display: grid;
+    place-content: center;
+    width: 101%;
+    height:auto;
 }
 .clock {
     width: 350px;
@@ -99,6 +97,7 @@ body {
 </style>
 </head>
 <body>
+    <section>
 <div class="clock">
     <div class="hour">
         <div class="hr" id="hr"></div>
@@ -110,7 +109,7 @@ body {
         <div class="sc" id="sc"></div>
     </div>
 </div>
-
+</section>
     <script>
         const deg = 6;
         const hr = document.querySelector('#hr');
