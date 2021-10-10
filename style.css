@@ -462,7 +462,7 @@ legend {
 .weather-page {
   position: absolute;
   display: none;
-  width: 217px;
+  width: 215px;
   height: 452px;
   border-radius: 8px;
   z-index: 3;
@@ -556,6 +556,16 @@ legend {
   object-fit: contain;
   width:22px;
   height:auto;
+}
+.clock-page {
+  position: absolute;
+  display: none;
+  width: 215px;
+  height: 452px;
+  border-radius: 8px;
+  z-index: 3;
+  opacity:1;
+  animation: pageloadon 0.8s;
 }
 
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
