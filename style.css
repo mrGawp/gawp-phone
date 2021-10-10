@@ -141,26 +141,8 @@ body{
   margin-bottom: 220px;
   margin-left: 245px;
 }
-.phone-header {
-  position: absolute;
-  color:#fff;
-  width:100%;
-  height:15px;
-  background-color: transparent;
-  cursor: default;
-  opacity: 0.4;
-  z-index:6;
-}
-.phone-headerb {
-  position: absolute;
-  color:#000;
-  width:100%;
-  height:15px;
-  background-color: transparent;
-  cursor: default;
-  opacity: 1;
-  z-index:6;
-}
+
+
 .phone-headerl {
   display: inline;
   position: relative;
@@ -169,6 +151,9 @@ body{
   margin-top:-5px;
   margin-left:2px;
   width:auto;
+  cursor: default;
+  opacity: 0.7;
+  z-index:6;
 }
 .phone-headerl p {
   position: relative;
@@ -176,6 +161,7 @@ body{
   font-size: 8px;
   margin-left:13px;
   margin-right: 0.5px;
+  color: #fff;
 }
 .phone-headerr {
   display: inline;
@@ -185,6 +171,9 @@ body{
   margin-top:-6px;
   margin-right:4px;
   width:auto;
+  cursor: default;
+  opacity: 0.7;
+  z-index:6;
 }
 .phone-headerr p {
   position: relative;
@@ -192,8 +181,52 @@ body{
   font-size: 8px;
   margin-left:0.5px;
   margin-right: 0.5px;
+  color: #fff;
 }
-/*white icons*/
+/*black*/
+.phone-headerlb {
+  display: none;
+  position: relative;
+  text-align: left;
+  float: left;
+  margin-top:-5px;
+  margin-left:2px;
+  width:auto;
+  cursor: default;
+  opacity: 1;
+  z-index:6;
+}
+.phone-headerlb p {
+  position: relative;
+  display: inline;
+  font-size: 8px;
+  margin-left:13px;
+  margin-right: 0.5px;
+  color: #000;
+}
+.phone-headerrb {
+  display: none;
+  position: relative;
+  text-align: left;
+  float: right;
+  margin-top:-6px;
+  margin-right:4px;
+  width:auto;
+  cursor: default;
+  opacity: 0.7;
+  z-index:6;
+}
+
+.phone-headerrb p {
+  position: relative;
+  display: inline;
+  font-size: 8px;
+  margin-left:0.5px;
+  margin-right: 0.5px;
+  color: #000;
+}
+
+/*icons*/
 .header-battery {
   position: relative;
   width:13px;
@@ -204,7 +237,7 @@ body{
   position: relative;
   width:7px;
   height:auto;
-  margin-bottom:-0.7px;
+  margin-bottom:-0.95px;
 }
 .header-signal {
   position: absolute;
@@ -219,43 +252,8 @@ body{
   height:auto;
   margin-left:-2px;
 }
-/*black icons*/
-.header-batteryb {
-  visibility: hidden;
-  position: absolute;
-  width:13px;
-  height:auto;
-  margin-top:8.9px;
-  margin-left:-31%;
-  opacity: 0.5;
-}
-.header-loactionb {
-  visibility: hidden;
-  position: absolute;
-  width:7px;
-  height:auto;
-  margin-top:11px;
-  margin-left:-18%;
-  opacity: 0.5;
-}
-.header-signalb {
-  visibility: hidden;
-  position: absolute;
-  width:8px;
-  height:auto;
-  margin-top:10px;
-  margin-left:2px;
-  opacity: 0.5;
-}
-.header-wifib {
-  visibility: hidden;
-  position: absolute;
-  width:9.5px;
-  height:auto;
-  margin-top:10.5px;
-  margin-left:-11px;
-  opacity: 0.5;
-}
+
+
 .phone-x {
   position: absolute;
   right: 3px;
@@ -462,11 +460,12 @@ legend {
 .weather-page {
   position: absolute;
   display: none;
-  width: 215px;
-  height: 452px;
+  width: 216px;     
+  height: 350px;
   border-radius: 8px;
   z-index: 3;
   opacity:1;
+  background: rgb(0, 132, 255);
   animation: pageloadon 0.8s;
 }
 
@@ -511,11 +510,12 @@ legend {
 .flappy-page {
   position: absolute;
   display: none;
-  width: 215px;
-  height: 452px;
+  width: 216px;     
+  height: 350px;
   border-radius: 8px;
   z-index: 3;
   opacity:1;
+  background: rgb(0, 255, 98);
   animation: pageloadon 0.8s;
 }
 
@@ -560,9 +560,10 @@ legend {
 .clock-page {
   position: absolute;
   display: none;
-  width: 215px;
-  height: 452px;
+  width: 216px;     
+  height: 350px;
   border-radius: 8px;
+  background: darkblue;
   z-index: 3;
   opacity:1;
   animation: pageloadon 0.8s;
