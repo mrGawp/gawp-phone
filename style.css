@@ -462,13 +462,160 @@ legend {
 .weather-page {
   position: absolute;
   display: none;
-  width: 216px;     
-  height: 350px;
+  place-content: center;
+  width: 215px;
+  height: 452px;
+  margin-top:-80px;
   border-radius: 8px;
   z-index: 3;
   opacity:1;
   background: rgb(0, 132, 255);
   animation: pageloadon 0.8s;
+  overflow: hidden;
+}
+
+.weather-page .card {
+  background: #202020d0;
+  color: white;
+  padding: 25px;
+  border-radius: 30px;
+  margin-top:18px;
+  width: 200px;
+  height:400px;
+  transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+}
+ .card .search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:25px;
+}
+
+.card button {
+  display: grid;
+  place-items: center;
+  margin: 4px;
+  border-radius: 50%;
+  border: none;
+  height: 36px;
+  width: 36px;
+  outline: none;
+  background: #7c7c7c2b;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.card input.search-bar {
+  margin-left: -9px;
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #7c7c7c2b;
+  color: white;
+  font-family: inherit;
+  font-size: 16px;
+  width: calc(100% - 75px);
+}
+
+.card button:hover {
+  background: #6c71886b;
+}
+
+.card h1.temp {
+  margin: 0;
+  margin-bottom: 0.4em;
+}
+
+.card .flex {
+  margin-top: 18px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  background: transparent;
+}
+.card .city {
+  font-size:18px;
+}
+.card .searchicon {
+ opacity: 0.35;
+ transform: scale(0.8);
+}
+.card .description {
+  background: transparent;
+  text-transform: capitalize;
+  margin-top:4px;
+  margin-bottom:9px;
+}
+.weather.loading {
+  visibility: hidden;
+  max-height: 20px;
+  position: relative;
+}
+.card .humidity {
+  font-size:12px;
+}
+.card .wind {
+  font-size:10px;
+}
+.card .temp {
+  font-size: 32px;
+}
+.high {font-size:12px; margin-right:5px;}
+.low {font-size:12px;}
+.flexhl {
+  display: inline-flex;
+  width:90%;
+  margin-top: 18px;
+  margin-bottom: 12px;
+  background: transparent;
+}
+.cityicon {
+  width:20px;
+  height:40px;
+  margin-left:5%;
+  margin-top:-4.5px;
+}
+.flexcity {
+  display: inline-flex;
+  width:90%;
+  height:auto;
+  background: transparent;
+  margin-bottom: 18px;
+}
+.icon {
+  width:50px;
+  height:auto;
+  margin-left: -5%;
+}
+.feelslike {
+  font-size:12px;
+}
+.weather.loading:after {
+  visibility: visible;
+  content: "Loading...";
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 20px;
+}
+.lay-waves-weather {
+  opacity: 0.5;
+  position: absolute;
+  aspect-ratio: 600/900;
+  height: auto;
+  width:100%;
+  margin-top:65%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border:none;
+  z-index:-2;
+  overflow: hidden;
+
 }
 
 /*flappybird-----------------------------------------------------------------------------------------------*/
