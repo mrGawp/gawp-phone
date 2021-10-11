@@ -567,7 +567,7 @@ legend {
   border-radius: 8px;
   z-index: 3;
   opacity:1;
-  background: rgb(0, 255, 98);
+  background: transparent;
   animation: pageloadon 0.8s;
 }
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
