@@ -79,10 +79,9 @@ body{
 }
 .phone-screen iframe { /*iframe*/
   position: absolute; /*iframe*/
-  width: 216px;       /*iframe*/
-  height: 452px;      /*iframe*/
-  border-radius: 7px; 
-  margin-top: -80px; 
+  width: 100%;       /*iframe*/
+  height: 100%;      /*iframe*/
+  border-radius: 7px;
   border-style: none;
   object-position: center;
   z-index:600;
@@ -559,36 +558,17 @@ legend {
   width:22px;
   height:auto;
 }
-#clock-page {
-  display: none;
-  animation: pageloadon 0.8s;
-}
-
-.phone-x-clock {
-  display: none;
+.clockpage {
   position: absolute;
-  right: 3px;
-  top:18px;
-  width: 30px;
-  height:30px;
-  background: transparent;
-  border-radius: 25%;
-  opacity: 0.4;
-  cursor: default;
-  transition: 0.2s;
-  z-index:700;
+  display: none;
+  width: 215px;
+  height: 452px;
+  margin-top:-80px;
+  border-radius: 8px;
+  z-index: 3;
+  opacity:1;
+  background: rgb(0, 255, 98);
   animation: pageloadon 0.8s;
-}
-.phone-x-clock:hover {
-  opacity: 1;
-  transform: scale(1.05);
-}
-.phone-x-clock p {
-  font-family: 'Poppins', sans-serif;
-  color: black;
-  font-size: 25px;
-  margin-top:-5px;
-  text-align: center;
 }
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
 @keyframes pageloadon {
