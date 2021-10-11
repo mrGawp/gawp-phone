@@ -137,7 +137,7 @@
             <p>Flappy Bird</p> 
         </div>        
         <div id="flappy-page" class="flappy-page"><iframe src="flappybird/index.html"></iframe>
-          <div class="phone-x" onclick="flappyoff()" style="margin-top: -80px;">
+          <div class="phone-x" onclick="flappyoff()">
             <p>&#10006;</p>
             </div>
           </div>
@@ -147,8 +147,17 @@
             <p>Clock</p> 
         </div>  
         <div class="clockpage" id="clock-page">
-          <iframe src="clock/index.html">
-          </iframe>
+          <div class="clock">
+            <div class="hour">
+                <div class="hr" id="hr"></div>
+            </div>
+            <div class="min">
+                <div class="mn" id="mn"></div>
+            </div>
+            <div class="sec">
+                <div class="sc" id="sc"></div>
+            </div>
+        </div>
           <div class="phone-x" id="phone-x" onclick="clockoff()">
             <p>&#10006;</p>
             </div>
@@ -276,7 +285,7 @@ function weatheroff() {
 
 function clockon() {
   var clockpage = document.getElementById("clock-page");
-  clockpage.style.display = "block";
+  clockpage.style.display = "grid";
 
   document.getElementById("phone-headerl").style.display = "none";
     document.getElementById("phone-headerr").style.display = "none";
@@ -297,6 +306,23 @@ function clockoff() {
       clockpage.style.display = "none"
   },800);
 }
+</script>
+<script>
+  const deg = 6;
+  const hr = document.querySelector('#hr');
+  const mn = document.querySelector('#mn');
+  const sc = document.querySelector('#sc');
+
+  setInterval(() => {
+  let day = new Date();
+  let hh =  day.getHours() * 30;
+  let mm =  day.getMinutes() * deg;
+  let ss =  day.getSeconds() * deg;
+
+  hr.style.transform = `rotateZ(${hh+(mm/12)}deg)`;
+  mn.style.transform = `rotateZ(${mm}deg)`;
+  sc.style.transform = `rotateZ(${ss}deg)`;
+  })
 </script>
 </body>
 </html>
