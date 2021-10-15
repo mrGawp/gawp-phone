@@ -894,7 +894,7 @@ legend {
   width:40px;
   height:40px;
   background: rgba(104, 255, 66, 0.918);
-  box-shadow: 1px 1px rgba(88, 88, 88, 0.462);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.562);
   border-radius: 15%;
   transition: 0.2s;
   cursor: default;
