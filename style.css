@@ -278,7 +278,7 @@ body{
   height:30px;
   background: transparent;
   border-radius: 25%;
-  opacity: 0.4;
+  opacity: 0.6;
   cursor: default;
   transition: 0.2s;
   z-index:700;
@@ -304,7 +304,7 @@ body{
   height:30px;
   background: transparent;
   border-radius: 25%;
-  opacity: 0.4;
+  opacity: 0.6;
   cursor: default;
   transition: 0.2s;
   z-index:700;
@@ -1212,7 +1212,7 @@ legend {
   object-fit: cover;
 }
 .contactpage-phone {
-  margin-top:18px;
+  margin-top:9px;
   width:200px;
   height:50px;
   display: flex;
@@ -1221,6 +1221,11 @@ legend {
   background: rgba(0, 0, 0, 0.315);
   box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
   border-radius: 9px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.contactpage-phone:hover {
+  background: rgba(0, 0, 0, 0.615);
 }
 .contactpage-phone-svg {
   margin-top:13px;
@@ -1228,7 +1233,11 @@ legend {
   width:20px;
   height:20px;
 }
-.contactpage-phone a {
+.contactpage a {
+  text-decoration: none;
+  color: transparent;
+}
+.contactpage-phone p {
   opacity: 0.8;
   text-align: center;
   color: rgba(255, 255, 255, 0.453);
@@ -1238,7 +1247,7 @@ legend {
   text-decoration: none;
 }
 .contactpage-email {
-  margin-top:18px;
+  margin-top:9px;
   width:200px;
   height:50px;
   display: flex;
@@ -1247,6 +1256,86 @@ legend {
   background: rgba(0, 0, 0, 0.315);
   box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
   border-radius: 9px;
+}
+.contactpage-email:hover {
+  background: rgba(0, 0, 0, 0.615);
+}
+.contactpage-email p {
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.453);
+  margin-top: 17px;
+  font-weight: 500;
+  font-size: 8.4px;
+  text-decoration: none;
+}
+.contactpage-email-svg {
+  margin-top:13px;
+  margin-right:10px;
+  width:22px;
+  height:22px;
+}
+
+.contactpage-location {
+  margin-top:9px;
+  width:200px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: wrap;
+  background: rgba(0, 0, 0, 0.315);
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
+  border-radius: 9px;
+}
+.contactpage-location:hover {
+  background: rgba(0, 0, 0, 0.615);
+}
+.contactpage-location p {
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.453);
+  margin-top: 13px;
+  font-weight: 500;
+  font-size: 17px;
+  text-decoration: none;
+}
+.contactpage-location-svg {
+  margin-left:-34px;
+  margin-top:13px;
+  margin-right:10px;
+  width:24px;
+  height:24px;
+}
+
+.contactpage-notes {
+  margin-top:9px;
+  width:200px;
+  height:78px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.315);
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
+  border-radius: 9px;
+}
+.contactpage-notes h1 {
+  margin-left: 22px;
+  opacity: 0.8;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.453);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+}
+.contactpage-notes p {
+  margin-left: 22px;
+  opacity: 0.8;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.453);
+  margin-top: 4px;
+  font-weight: 500;
+  font-size: 7px;
+  text-decoration: none;
 }
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
 @keyframes pageloadon {
