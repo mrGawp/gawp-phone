@@ -86,6 +86,22 @@ body{
   object-position: center;
   z-index:600;
 }
+.phone-spacer {
+  width: 215px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+.phone-spacer-bot {
+  width: 113.5px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin-top: 18px;
+}
+
+
 .phone-top {
   position: absolute;
   background: rgb(22, 22, 22);
@@ -279,6 +295,32 @@ body{
   margin-right:-9px;
   text-align: center;
 }
+
+.phone-x-w {
+  position: absolute;
+  right: 3px;
+  top:18px;
+  width: 30px;
+  height:30px;
+  background: transparent;
+  border-radius: 25%;
+  opacity: 0.4;
+  cursor: default;
+  transition: 0.2s;
+  z-index:700;
+}
+.phone-x-w:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+.phone-x-w p {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-size: 25px;
+  margin-top:-5px;
+  margin-right:-9px;
+  text-align: center;
+}
 /*apps*//*apps*//*apps*/
 
 /*settings-----------------------------------------------------------------------------------------------*/
@@ -286,8 +328,7 @@ body{
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: 40px;
-  margin-left: 6px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgb(77, 77, 77);
@@ -339,7 +380,7 @@ body{
   background: rgb(218, 218, 218);
   z-index: 3;
   opacity:1;
-  margin-top: -80px;
+  margin-top: -40px;
   animation: pageloadon 0.8s;
 }
 @keyframes settingspageloadon {
@@ -427,8 +468,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: -40px;
-  margin-left: 59px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgba(70, 143, 253, 0.918);
@@ -465,7 +505,7 @@ legend {
   place-content: center;
   width: 215px;
   height: 452px;
-  margin-top:-80px;
+  margin-top: -40px;
   border-radius: 8px;
   z-index: 3;
   opacity:1;
@@ -623,8 +663,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: -40px;
-  margin-left: 114px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgba(76, 253, 70, 0.918);
@@ -659,7 +698,7 @@ legend {
 .flappy-page {
   position: absolute;
   display: none;
-  margin-top:-80px;
+  margin-top: -40px;
   width: 215px;
   height: 452px;
   border-radius: 8px;
@@ -674,8 +713,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: -40px;
-  margin-left: 167px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgba(29, 29, 29, 0.918);
@@ -713,7 +751,7 @@ legend {
   place-content: center;
   width: 215px;
   height: 452px;
-  margin-top:-80px;
+  margin-top: -40px;
   border-radius: 7px;
   z-index: 3;
   opacity:1;
@@ -805,8 +843,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: 40px;
-  margin-left: 6px;
+  margin:6px;
   width:40px;
   height:40px;
   background: rgb(22, 22, 22);
@@ -842,8 +879,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: -40px;
-  margin-left: 59px;
+  margin:6px;
   width:40px;
   height:40px;
   background: rgba(158, 158, 158, 0.918);
@@ -876,12 +912,16 @@ legend {
 }
 /*bottom-----------------------------------------------------------------------------------------------*/
 .phone-bottom {
-  position: absolute;
-  display: inline;
-  margin-left: 20px;
-  margin-top: 200px;
-  width: 175px;
-  height: 75px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  width:170px;
+  padding: 3px;
+  height: 65px;
   border-radius: 19px;
   background: #4242429d;
 }
@@ -890,8 +930,7 @@ legend {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: 12px;
-  margin-left: 39px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgba(104, 255, 66, 0.918);
@@ -922,13 +961,183 @@ legend {
   width:26px;
   height:auto;
 }
+/*message page*/
+.mesnpage {
+  position: absolute;
+  display: none;
+  place-content: center;
+  width: 215px;
+  height: 452px;
+  margin-top: -355px;
+  border-radius: 7px;
+  z-index: 3;
+  opacity:1;
+  background: #272727;
+  animation: pageloadon 0.8s;
+}
+/*message box*/
+.mesn-msg-box {
+  position: relative;
+  display: grid;
+  place-content: center;
+  background: #a5a5a518;
+  margin-top: 405px;
+  border-radius: 7px;
+  width: 215px;
+  height:50px;
+}
+.mesn-msg-box button {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  margin-left: 172px;
+  margin-top: 5.5px;
+  border-radius: 50%;
+  border: none;
+  height: 39px;
+  width: 39px;
+  outline: none;
+  background: #0c77f1;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+.mesn-msg-box button:hover {
+  transform: scale(1.06);
+  background: #0062d1;
+}
+.mesn-msg-box input.search-bar-msg {
+  margin-left: 2px;
+  border: none;
+  outline: none;
+  padding-right: 45px;
+  padding-left: 6px;
+  padding-bottom: 3px;
+  padding-top: 3px;
+  border-radius: 19px;
+  background: #c4c4c42b;
+  color: white;
+  font-family: inherit;
+  font-size: 15px;
+  width: 155px;
+  height: 30px;
+}
+.mesn-svg-send {
+  width:18px;
+  height:18px;
+  margin-right:2px;
+  margin-top:2px;
+  opacity: 0.6;
+}
+/*contact message box*/
+.mesn-con-box {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  background: #a5a5a518;
+  border-radius: 7px;
+  width: 215px;
+  height:139px;
+}
+.mesn-con-box p {
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.714);
+  text-shadow: 1px 1px black;
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 11px;
+}
+.mesn-con-con {
+  position: relative;
+  width:50px;
+  height:50px;
+  margin-top: 9.9px;
+  background: #000;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.562);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.mesn-con-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.mesn-con-icons-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background: transparent;
+  width: 215px;
+  height:15px;
+  margin-top:109px;
+  z-index:200;
+}
+.mesn-con-icons-i {
+  position: relative;
+  display: grid;
+  place-content: center;
+  margin: 6px;
+  width:14px;
+  height:14px;
+  margin-left:6px;
+  margin-right:6px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.318);
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.562);
+  border-radius: 50%;
+  transition: 0.2s;
+  cursor: default;
+}
+.mesn-con-icons-i:hover {
+  transform: scale(1.05);
+  -webkit-transform: scale(1.05);
+  background: rgba(85, 85, 85, 0.918);
+}
+.mesn-con-icons-svg {
+  width:6px;
+  height:6px;
+}
+.mesn-message-bb {
+  margin-top:160px;
+  margin-left:12px;
+  position: absolute;
+  width:100px;
+  height:auto;
+  padding:3px;
+  background: #0c77f1;
+  border-radius: 9px;
+  z-index: 1;
+}
+.mesn-message-bb p {
+  position: relative;
+  opacity: 1;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px black;
+  font-weight: 500;
+  font-size: 9px;
+}
+.mesn-message-bb-m {
+  position: absolute;
+  margin-left: -7px;
+  margin-top: -6.8px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 11px solid #0c77f1;
+  transform: rotate(-16deg);
+  z-index: -1;
+}
+
 /*Contact-----------------------------------------------------------------------------------------------*/
 .contact-p {
   position: relative;
   display: grid;
   place-content: center;
-  margin-top: -40px;
-  margin-left: 100px;
+  margin: 6px;
   width:40px;
   height:40px;
   background: rgba(105, 105, 105, 0.918);
@@ -958,6 +1167,86 @@ legend {
   object-fit: contain;
   width:26px;
   height:auto;
+}
+/*contact page*/
+.contactpage {
+  position: absolute;
+  display: none;
+  place-content: center;
+  place-items: center;
+  width: 215px;
+  height: 452px;
+  margin-top: -423px;
+  border-radius: 7px;
+  z-index: 3;
+  opacity:1;
+  background: #4d4d4d;
+  animation: pageloadon 0.8s;
+}
+.contactpage-name {
+  width:100%;
+  height:auto;
+}
+.contactpage-name p {
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.714);
+  text-shadow: 1px 1px black;
+  margin-top: 9px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.contact-profilepic {
+  position: relative;
+  width:90px;
+  height:90px;
+  margin-top: 9.9px;
+  background: #000;
+  box-shadow: 1px 1px rgba(0, 0, 0, 0.562);
+  border-radius: 50%;
+  overflow: hidden;
+}
+.contact-profilepic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contactpage-phone {
+  margin-top:18px;
+  width:200px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: wrap;
+  background: rgba(0, 0, 0, 0.315);
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
+  border-radius: 9px;
+}
+.contactpage-phone-svg {
+  margin-top:13px;
+  margin-right:10px;
+  width:20px;
+  height:20px;
+}
+.contactpage-phone a {
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.453);
+  margin-top: 12px;
+  font-weight: 500;
+  font-size: 16px;
+  text-decoration: none;
+}
+.contactpage-email {
+  margin-top:18px;
+  width:200px;
+  height:50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: wrap;
+  background: rgba(0, 0, 0, 0.315);
+  box-shadow: 2px 2px rgba(255, 255, 255, 0.253);
+  border-radius: 9px;
 }
 /*animations-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-/-*/
 @keyframes pageloadon {
